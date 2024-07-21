@@ -62,6 +62,8 @@ def draw_bounding_box(output_image, detections):
                 move_the_bot(3)
             elif center_x - CENTER_RANGE < cx:
                 move_the_bot(4)
+        else: 
+            move_the_bot(3)
 
         # Draw centroid
         cv2.circle(output_image, (cx, cy), 2, (0, 0, 255), 2, cv2.FILLED)
